@@ -1,0 +1,145 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e0f7ff; /* Background similar to the screenshot */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.weather-app {
+  width: 375px;
+  height: 750px;
+  background-image: linear-gradient(to top, #0F90DA, #89D4FF);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.events {
+  background-color: rgba(0, 0, 0, 0)#ffffff;
+  border: 3px solid white; 
+  border-radius: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  width: 80%;
+}
+
+.event-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 1rem;
+}
+
+.event-time {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 1rem;
+  background-color: #007AFF;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+
+.ring-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.ring-svg {
+  position: relative;
+}
+
+.ring {
+  fill: none; /* No fill for the rings */
+  cursor: pointer;
+}
+
+.ring:nth-child(1) {
+  stroke: #E66D57; /* Red-ish outer ring */
+  stroke-width: 20;
+}
+
+.ring:nth-child(2) {
+  stroke: #8590C8; /* Yellow second ring */
+  stroke-width: 15;
+}
+
+.ring:nth-child(3) {
+  stroke: #EBC34B; /* Blue third ring */
+  stroke-width: 12;
+}
+
+
+.image {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+}
+
+.forecast-cards {
+  margin-top: 1.4rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.forecast-card {
+  background-color: rgba(35, 33, 55, 0.66);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  text-align: center;
+  flex: 1;
+  height: 120px;
+  margin: 0 0.25rem;
+
+  /* Flexbox properties to center content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers items vertically */
+  align-items: center; /* Centers items horizontally */
+}
+
+.forecast-card:nth-child(1) {
+  margin-left: 0;
+}
+
+.forecast-card:nth-child(5) {
+  margin-right: 0;
+}
+
+.ring-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.2rem 3rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer; 
+}
+
+#weather-icon {
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}
+
+#main-text {
+  color: white;
+}
